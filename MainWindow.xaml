@@ -1,0 +1,554 @@
+﻿<Window x:Class="Data_Binding_Mironov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Data_Binding_Mironov"
+        mc:Ignorable="d"
+        Title="Окно приёма пациента" Height="525" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="210"/>
+            <RowDefinition Height="110" />
+            <RowDefinition />
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+
+        <!--форма регистрации доктора-->
+        <StackPanel Background="LightGray" 
+                    VerticalAlignment="Top" 
+                    Grid.Row="0" 
+                    Grid.Column="0">
+
+            <Label HorizontalAlignment="Center" 
+                   Height="25" 
+                   Content="Регистрация доктора"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Height="25" 
+                       Content="Имя: " 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Фамилия: " 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Отчество: " 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Специализация: " 
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Пароль: " 
+                       Grid.Row="4" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Подтверждение: " 
+                       Grid.Row="5" 
+                       Grid.Column="0"/>
+
+                <TextBox Text="{Binding NewDoctor.FirstName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  
+                         Width="120" 
+                         Height="20" 
+                         Grid.Row="0" 
+                         Grid.Column="1" />
+
+                <TextBox Text="{Binding NewDoctor.Patronymic, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="1" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding NewDoctor.Surname, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="2" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding NewDoctor.Specialty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="3" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding NewDoctor.SecretCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="4" 
+                         Grid.Column="1"/>
+
+                <TextBox Name="PasswordConfirmField" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="5" 
+                         Grid.Column="1"/>
+            </Grid>
+
+            <Button Click="RegisterNewDoctor" 
+                    Margin="5" 
+                    Width="150" 
+                    Content="Зарегистрировать"/>
+
+        </StackPanel>
+
+        <!--панель авторизации-->
+        <StackPanel Background="Gray" 
+                    VerticalAlignment="Top" 
+                    Grid.Row="1" 
+                    Grid.Column="0">
+
+            <Label HorizontalAlignment="Center" 
+                   Content="Вход в систему"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" 
+                       Grid.Column="0" 
+                       Content="ID пользователя: "/>
+
+                <Label Grid.Row="1" 
+                       Grid.Column="0" 
+                       Content="Пароль: "/>
+
+                <TextBox Name="UserIdField" 
+                         Width="120" 
+                         Grid.Row="0" 
+                         Grid.Column="1" 
+                         Height="20"/>
+
+                <PasswordBox Name="UserPasswordField" 
+                             Width="120" 
+                             Grid.Row="1" 
+                             Grid.Column="1" 
+                             Height="20"/>
+            </Grid>
+
+            <Button Click="AuthenticateUser" 
+                    Margin="5" 
+                    Width="100" 
+                    Content="Войти"/>
+
+        </StackPanel>
+
+        <!--текущий пользователь системы-->
+        <StackPanel Background="DarkGray" 
+                    VerticalAlignment="Center" 
+                    Grid.Row="2" 
+                    Grid.Column="0">
+
+            <Label HorizontalAlignment="Center" 
+                   Height="25" 
+                   Content="Активный пользователь"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Height="25" 
+                       Content="Имя: " 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Фамилия: " 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Отчество: " 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Специализация: " 
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Пароль: " 
+                       Grid.Row="4" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="{Binding Doctor.FirstName, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="0" 
+                       Grid.Column="1"/>
+
+                <Label Height="25" 
+                       Content="{Binding Doctor.Patronymic, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="1" 
+                       Grid.Column="1"/>
+
+                <Label Height="25" 
+                       Content="{Binding Doctor.Surname, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="2" 
+                       Grid.Column="1"/>
+
+                <Label Height="25" 
+                       Content="{Binding Doctor.Specialty, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="3" 
+                       Grid.Column="1"/>
+
+                <Label Height="25" 
+                       Content="{Binding Doctor.SecretCode, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="4" 
+                       Grid.Column="1"/>
+            </Grid>
+
+        </StackPanel>
+
+        <!--поиск пациента-->
+        <StackPanel Background="WhiteSmoke" 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    VerticalAlignment="Top">
+
+            <Label HorizontalAlignment="Center" 
+                       Height="25" 
+                       Content="Поиск пациента по ID"/>
+
+            <TextBox Name="SearchIdField" 
+                         Margin="5" 
+                         Height="20" 
+                         Width="200"/>
+
+            <Button Click="FindPatientRecord" 
+                    Content="Найти" 
+                    Width="150" 
+                    Margin="10"/>
+
+        </StackPanel>
+
+        <!--панель приёма пациента-->
+        <StackPanel Margin="0,15,0,0" 
+                    Background="WhiteSmoke" 
+                    Grid.RowSpan="3" 
+                    VerticalAlignment="Bottom" 
+                    HorizontalAlignment="Stretch"  
+                    Grid.Row="0" 
+                    Grid.Column="1">
+
+            <Label HorizontalAlignment="Center" 
+                   Height="25" 
+                   Content="Приём пациента"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Height="25" 
+                       Content="Имя: " 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Фамилия: " 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Отчество: " 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Дата приёма: " 
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Диагноз: " 
+                       Grid.Row="4" 
+                       Grid.Column="0"/>
+
+                <Label Grid.ColumnSpan="2" 
+                       HorizontalAlignment="Center" 
+                       Height="25" 
+                       Content="Рекомендации: " 
+                       Grid.Row="5" Grid.Column="0"/>
+
+                <Label Content="{Binding Patient.GivenName, UpdateSourceTrigger=PropertyChanged}" 
+                       Height="25" 
+                       Grid.Row="0" 
+                       Grid.Column="1"/>
+
+                <Label Height="25" 
+                       Content="{Binding Patient.FathersName, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="1" 
+                       Grid.Column="1"/>
+
+                <Label Height="25" 
+                       Content="{Binding Patient.FamilyName, UpdateSourceTrigger=PropertyChanged}" 
+                       Grid.Row="2" 
+                       Grid.Column="1"/>
+
+                <DatePicker Text="{Binding Patient.LastVisitDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                            Width="120" 
+                            Height="25"  
+                            Grid.Row="3" 
+                            Grid.Column="1"/>
+
+                <TextBox Text="{Binding Patient.MedicalCondition, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20" 
+                         Grid.Row="4" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding Patient.TreatmentPlan, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Margin="10" 
+                         Grid.ColumnSpan="2" 
+                         Width="225" 
+                         Height="100" 
+                         Grid.Row="6" 
+                         Grid.Column="0"/>
+            </Grid>
+
+            <Button Margin="10" 
+                    Click="CompleteAppointment" 
+                    Content="Завершить приём"/>
+
+        </StackPanel>
+
+        <!--регистрация нового пациента-->
+        <StackPanel 
+            Background="WhiteSmoke"  
+            VerticalAlignment="Top" 
+            Grid.Row="0" 
+            Grid.Column="3">
+
+            <Label HorizontalAlignment="Center" 
+                   Height="25" 
+                   Content="Регистрация пациента"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Height="25" 
+                       Content="Имя: " 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Фамилия: " 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Отчество: " 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Дата рождения: " 
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <TextBox Text="{Binding NewPatient.GivenName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="0" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding NewPatient.FathersName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="1" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding NewPatient.FamilyName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="2" 
+                         Grid.Column="1"/>
+
+                <DatePicker Text="{Binding NewPatient.DateOfBirth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                            Width="120" 
+                            Height="25"  
+                            Grid.Row="3" 
+                            Grid.Column="1"/>
+            </Grid>
+
+            <Button Click="RegisterNewPatient" 
+                    Margin="5" 
+                    Width="150" 
+                    Content="Зарегистрировать"/>
+
+        </StackPanel>
+
+        <!--редактирование данных пациента-->
+        <StackPanel Background="WhiteSmoke" 
+                    VerticalAlignment="Bottom" 
+                    Grid.RowSpan="2"  
+                    Grid.Row="1" 
+                    Grid.Column="3">
+
+            <Label HorizontalAlignment="Center" 
+                   Height="25" 
+                   Content="Редактирование данных пациента"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Height="25" 
+                       Content="Имя: " 
+                       Grid.Row="0" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Фамилия: " 
+                       Grid.Row="1" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Отчество: " 
+                       Grid.Row="2" 
+                       Grid.Column="0"/>
+
+                <Label Height="25" 
+                       Content="Дата рождения: " 
+                       Grid.Row="3" 
+                       Grid.Column="0"/>
+
+                <TextBox Text="{Binding EditedPatient.GivenName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="0" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding EditedPatient.FathersName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="1" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding EditedPatient.FamilyName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="2" 
+                         Grid.Column="1"/>
+
+                <TextBox Text="{Binding EditedPatient.DateOfBirth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                         Width="120" 
+                         Height="20"  
+                         Grid.Row="3" 
+                         Grid.Column="1"/>
+            </Grid>
+
+            <Button Click="SavePatientChanges" 
+                    Margin="5" 
+                    Width="150" 
+                    Content="Сохранить изменения"/>
+
+        </StackPanel>
+
+        <!--статистика системы-->
+        <StackPanel 
+            Background="LightGray" 
+            Grid.Row="3" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="3" 
+            Orientation="Horizontal">
+
+            <Label VerticalAlignment="Center" 
+                   Content="Зарегистрировано докторов:"/>
+
+            <Label VerticalAlignment="Center"
+                   Content="{Binding Stats.DoctorCount, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label VerticalAlignment="Center" 
+                   Content="Зарегистрировано пациентов:"/>
+
+            <Label VerticalAlignment="Center" 
+                   Content="{Binding Stats.PatientCount, UpdateSourceTrigger=PropertyChanged}"/>
+
+        </StackPanel>
+    </Grid>
+</Window>

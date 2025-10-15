@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pacient.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pacient.cs",
+              "RelativeDocumentMoniker": "Pacient.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pacient.cs",
+              "RelativeToolTip": "Pacient.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAIwJAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:38:28.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Doctor.cs",
+              "RelativeDocumentMoniker": "Doctor.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Doctor.cs",
+              "RelativeToolTip": "Doctor.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:35:40.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Statistics.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Statistics.cs",
+              "RelativeDocumentMoniker": "Statistics.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Statistics.cs",
+              "RelativeToolTip": "Statistics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:25:15.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-15T20:19:34.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAswE4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:19:29.014Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
