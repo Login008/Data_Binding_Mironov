@@ -18,3 +18,16 @@ D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\refint\Da
 D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Data_Binding_Mironov.pdb
 D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Data_Binding_Mironov.genruntimeconfig.cache
 D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\ref\Data_Binding_Mironov.dll
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\AcceptingPatientPage.g.cs
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\ChangePatientPage.g.cs
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\CreatePage.g.cs
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\MainPage.g.cs
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\RegistrPage.g.cs
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\SignInPage.g.cs
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\AcceptingPatientPage.baml
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\ChangePatientPage.baml
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\CreatePage.baml
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\MainPage.baml
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\RegistrPage.baml
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\SignInPage.baml
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Data_Binding_Mironov.sourcelink.json

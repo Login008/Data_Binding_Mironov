@@ -1,0 +1,182 @@
+﻿<Page x:Class="Data_Binding_Mironov.Pages.AcceptingPatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Data_Binding_Mironov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" 
+      d:DesignWidth="700"
+      Title="AcceptingPatientPage">
+
+    <StackPanel Width="700"
+                Height="450" 
+                Background="LightGray" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center">
+        
+        <Label HorizontalAlignment="Center" 
+               Height="30" 
+               Content="Приём пациента"
+               FontSize="16"/>
+        
+        <Grid Margin="10">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Label Height="25" 
+                   Content="Фамилия: " 
+                   Grid.Row="0" 
+                   Grid.Column="0"/>
+            
+            <Label Height="25" 
+                   Content="Имя: " 
+                   Grid.Row="1" 
+                   Grid.Column="0"/>
+            
+            <Label Height="25" 
+                   Content="Отчество: " 
+                   Grid.Row="2" 
+                   Grid.Column="0"/>
+            
+            <Label Height="25" 
+                   Content="Дата рождения: " 
+                   Grid.Row="3" 
+                   Grid.Column="0"/>
+
+            <Label  Height="25" 
+                    Content="{Binding pacient.LastName}" 
+                    Grid.Row="0" 
+                    Grid.Column="1"/>
+            
+            <Label Height="25" 
+                   Content="{Binding pacient.Name}"  
+                   Grid.Row="1" 
+                   Grid.Column="1"/>
+            
+            <Label Height="25" 
+                   Content="{Binding pacient.MiddleName}"  
+                   Grid.Row="2" 
+                   Grid.Column="1"/>
+
+            <Label Height="25"  
+                   Content="{Binding pacient.Birthday}" 
+                   Grid.Row="3" 
+                   Grid.Column="1"/>
+        </Grid>
+        
+        <ListView ItemsSource="{Binding pacient.LastAppointment}" 
+                  LostFocus="ListView_LostFocus" 
+                  SelectionChanged="ListView_SelectionChanged" 
+                  SelectedItem="{Binding copyHistory}" 
+                  MouseDoubleClick="ListView_MouseDoubleClick"  
+                  Width="600" 
+                  Height="100">
+            
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Дата приёма: "/>
+                            <TextBlock Text="{Binding Date}"/>
+                        </StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="ФИО принимающего доктора: "/>
+                            <TextBlock Text="{Binding GetName}"/>
+                        </StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Диагноз: "/>
+                            <TextBlock Text="{Binding Diagnosis}"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Рекомендация: "/>
+                            <TextBlock Text="{Binding Recomendations}"/>
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <Grid Margin="10">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Height="25" 
+                   HorizontalAlignment="Center"
+                   Content="Дата приёма: " 
+                   Grid.Row="0" 
+                   Grid.Column="0"/>
+            
+            <Label Height="25" 
+                   HorizontalAlignment="Center"
+                   Content="Диагноз: " 
+                   Grid.Row="1" 
+                   Grid.Column="0"/>
+            
+            <Label Grid.ColumnSpan="2" 
+                   HorizontalAlignment="Center" 
+                   Height="30" 
+                   Content="Рекомендация: " 
+                   Grid.Row="2" 
+                   Grid.Column="0"
+                   FontSize="16"/>
+
+            <DatePicker Text="{Binding copyHistory.Date, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                        Width="200" 
+                        Height="25"  
+                        Grid.Row="0" 
+                        Grid.Column="1"/>
+
+            <TextBox Text="{Binding copyHistory.Diagnosis, UpdateSourceTrigger=PropertyChanged}"  
+                     Width="200" 
+                     Height="20" 
+                     Grid.Row="1"
+                     Grid.Column="1"/>
+            
+            <TextBox Text="{Binding copyHistory.Recomendations, UpdateSourceTrigger=PropertyChanged}" 
+                     Margin="5" 
+                     Grid.ColumnSpan="3"
+                     Width="600" 
+                     Height="40" 
+                     Grid.Row="7"
+                     Grid.Column="0"/>
+        </Grid>
+        
+        <Button Click="Addiction" 
+                HorizontalAlignment="Center"
+                Content="Добавить"
+                Width="200"/>
+
+        <Button Click="Back" 
+                HorizontalAlignment="Center"
+                Width="200"
+                Content="Вернуться"
+                Margin="5"/>
+    </StackPanel>
+</Page>

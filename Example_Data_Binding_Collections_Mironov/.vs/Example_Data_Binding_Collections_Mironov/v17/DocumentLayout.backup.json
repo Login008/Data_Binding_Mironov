@@ -1,0 +1,140 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\pages\\listpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:pages\\listpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\pages\\listpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:pages\\listpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\example_data_binding_collections_mironov\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CA1189EE-8D55-4CD8-A7BB-57D282190CF2}|Example_Data_Binding_Collections_Mironov.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserFormPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\UserFormPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\UserFormPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\UserFormPage.xaml",
+              "RelativeToolTip": "Pages\\UserFormPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-23T10:09:52.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\ListPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\ListPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\ListPage.xaml.cs",
+              "RelativeToolTip": "Pages\\ListPage.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T09:15:57.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-23T08:53:17.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserFormPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\UserFormPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\UserFormPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\UserFormPage.xaml.cs",
+              "RelativeToolTip": "Pages\\UserFormPage.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T10:10:18.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\ListPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\ListPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\Pages\\ListPage.xaml",
+              "RelativeToolTip": "Pages\\ListPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-23T08:58:21.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T08:53:05.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Example_Data_Binding_Collections_Mironov\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T09:11:57.308Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

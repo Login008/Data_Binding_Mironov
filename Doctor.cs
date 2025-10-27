@@ -5,96 +5,104 @@ namespace Data_Binding_Mironov
 {
     public class Doctor : INotifyPropertyChanged
     {
-        //приватные поля для хранения данных
-        private string _firstName = "";
-        private string _surname = "";
-        private string _patronymic = "";
-        private string _specialty = "";
-        private string _secretCode = "";
-
-        //свойства с уведомлением об изменении
-        public string FirstName
+        public Doctor(int id, string name, string lastname, string middlename, string specialisation, string password)
         {
-            get => _firstName;
+            Id = id;
+            Name = name;
+            LastName = lastname;
+            MiddleName = middlename;
+            Specialisation = specialisation;
+            Password = password;
+        }
+
+        public Doctor()
+        {
+        }
+
+        private int _id = 0;
+        public int Id
+        {
+            get => _id;
             set
             {
-                if (_firstName != value)
+                if (_id != value)
                 {
-                    _firstName = value;
-                    NotifyPropertyChanged(); //уведомляем систему об изменении
+                    _id = value;
+                    NotifyPropertyChanged();
                 }
             }
         }
-
-        public string Surname
+        private string _name = "";
+        public string Name
         {
-            get => _surname;
+            get => _name;
             set
             {
-                if (_surname != value)
+                if (_name != value)
                 {
-                    _surname = value;
+                    _name = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+        private string _lastname = "";
+        public string LastName
+        {
+            get => _lastname;
+            set
+            {
+                if (_lastname != value)
+                {
+                    _lastname = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+        private string _middlename = "";
+        public string MiddleName
+        {
+            get => _middlename;
+            set
+            {
+                if (_middlename != value)
+                {
+                    _middlename = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+        private string _specialisation = "";
+        public string Specialisation
+        {
+            get => _specialisation;
+            set
+            {
+                if (_specialisation != value)
+                {
+                    _specialisation = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+        private string _password = "";
+        public string Password
+        {
+            get => _password;
+            set
+            {
+                if (_password != value)
+                {
+                    _password = value;
                     NotifyPropertyChanged();
                 }
             }
         }
 
-        public string Patronymic
-        {
-            get => _patronymic;
-            set
-            {
-                if (_patronymic != value)
-                {
-                    _patronymic = value;
-                    NotifyPropertyChanged();
-                }
-            }
-        }
-
-        public string Specialty
-        {
-            get => _specialty;
-            set
-            {
-                if (_specialty != value)
-                {
-                    _specialty = value;
-                    NotifyPropertyChanged();
-                }
-            }
-        }
-
-        public string SecretCode
-        {
-            get => _secretCode;
-            set
-            {
-                if (_secretCode != value)
-                {
-                    _secretCode = value;
-                    NotifyPropertyChanged();
-                }
-            }
-        }
-
-        //событие для реализации INotifyPropertyChanged
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        //метод для уведомления об изменении свойства
         protected void NotifyPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        //метод для очистки всех полей
-        public void ResetFields()
-        {
-            FirstName = string.Empty;
-            Surname = string.Empty;
-            Patronymic = string.Empty;
-            Specialty = string.Empty;
-            SecretCode = string.Empty;
         }
     }
 }

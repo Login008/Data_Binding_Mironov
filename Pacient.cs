@@ -1,129 +1,94 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 
 namespace Data_Binding_Mironov
 {
-    public class PatientRecord : INotifyPropertyChanged
+    public class Pacient : INotifyPropertyChanged
     {
-        //приватные поля для хранения данных пациента
-        private string _recordId = "";
-        private string _givenName = "";
-        private string _familyName = "";
-        private string _fathersName = "";
-        private string _dateOfBirth = "";
-        private string _lastVisitDate = "";
-        private Doctor _attendingDoctor = null;
-        private string _medicalCondition = "";
-        private string _treatmentPlan = "";
-
-        //свойство ID пациента
-        public string RecordId
+        //конструктор для более быстрого создания
+        public Pacient(string name, string lastName, string middleName, string birthday, ObservableCollection<HistoryAppointment> lastAppointment)
         {
-            get => _recordId;
-            set => _recordId = value;
+            Name = name;
+            LastName = lastName;
+            MiddleName = middleName;
+            Birthday = birthday;
+            LastAppointment = lastAppointment;
         }
 
-        //свойства с уведомлением об изменении
-        public string GivenName
+        public Pacient()
         {
-            get => _givenName;
+        }
+
+        //приватные свойства для хранения данных пациента
+        private string _id = "";
+        public string Id
+        {
+            get => _id;
+            set => _id = value;
+        }
+        private string _name = "";
+        public string Name
+        {
+            get => _name;
             set
             {
-                if (_givenName != value)
+                if (_name != value)
                 {
-                    _givenName = value;
+                    _name = value;
                     NotifyPropertyChanged();
                 }
             }
         }
-
-        public string FamilyName
+        private string _lastname = "";
+        public string LastName
         {
-            get => _familyName;
+            get => _lastname;
             set
             {
-                if (_familyName != value)
+                if (_lastname != value)
                 {
-                    _familyName = value;
+                    _lastname = value;
                     NotifyPropertyChanged();
                 }
             }
         }
-
-        public string FathersName
+        private string _middlename = "";
+        public string MiddleName
         {
-            get => _fathersName;
+            get => _middlename;
             set
             {
-                if (_fathersName != value)
+                if (_middlename != value)
                 {
-                    _fathersName = value;
+                    _middlename = value;
                     NotifyPropertyChanged();
                 }
             }
         }
-
-        public string DateOfBirth
+        private string _birthday = "";
+        public string Birthday
         {
-            get => _dateOfBirth;
+            get => _birthday;
             set
             {
-                if (_dateOfBirth != value)
+                if (_birthday != value)
                 {
-                    _dateOfBirth = value;
+                    _birthday = value;
                     NotifyPropertyChanged();
                 }
             }
         }
-
-        public string LastVisitDate
+        private ObservableCollection<HistoryAppointment> _lastAppointment = new ObservableCollection<HistoryAppointment>();
+        public ObservableCollection<HistoryAppointment> LastAppointment
         {
-            get => _lastVisitDate;
+            get => _lastAppointment;
             set
             {
-                if (_lastVisitDate != value)
+                if (_lastAppointment != value)
                 {
-                    _lastVisitDate = value;
-                    NotifyPropertyChanged();
-                }
-            }
-        }
-
-        public Doctor AttendingDoctor
-        {
-            get => _attendingDoctor;
-            set
-            {
-                if (_attendingDoctor != value)
-                {
-                    _attendingDoctor = value;
-                    NotifyPropertyChanged();
-                }
-            }
-        }
-
-        public string MedicalCondition
-        {
-            get => _medicalCondition;
-            set
-            {
-                if (_medicalCondition != value)
-                {
-                    _medicalCondition = value;
-                    NotifyPropertyChanged();
-                }
-            }
-        }
-
-        public string TreatmentPlan
-        {
-            get => _treatmentPlan;
-            set
-            {
-                if (_treatmentPlan != value)
-                {
-                    _treatmentPlan = value;
+                    _lastAppointment = value;
                     NotifyPropertyChanged();
                 }
             }
@@ -132,23 +97,10 @@ namespace Data_Binding_Mironov
         //cобытие для уведомления об изменении свойств
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        //vетод для вызова события PropertyChanged
+        //метод для вызова события PropertyChanged
         protected void NotifyPropertyChanged([CallerMemberName] string? propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        //метод для очистки всех данных пациента
-        public void ClearData()
-        {
-            GivenName = string.Empty;
-            FamilyName = string.Empty;
-            FathersName = string.Empty;
-            DateOfBirth = string.Empty;
-            AttendingDoctor = null;
-            LastVisitDate = string.Empty;
-            MedicalCondition = string.Empty;
-            TreatmentPlan = string.Empty;
         }
     }
 }

@@ -3,24 +3,80 @@
   "WorkspaceRootPath": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\createpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\createpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\acceptingpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\acceptingpatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\signinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\signinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\registrpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\registrpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\changepatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\changepatientpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\acceptingpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\acceptingpatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\changepatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\changepatientpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\createpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\createpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pages\\registrpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pages\\registrpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:pacient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\historyappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:historyappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|d:\\\u0440\u0430\u0431\u043E\u0442\u044B\\\u0442\u0440\u043F\u043E\\data_binding_mironov\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DE80863-0C5E-447A-A0F8-AB625CF43C2F}|Data_Binding_Mironov.csproj|solutionrelative:doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,8 +85,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedWidth": 215,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,46 +94,167 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pacient.cs",
-              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pacient.cs",
-              "RelativeDocumentMoniker": "Pacient.cs",
-              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pacient.cs",
-              "RelativeToolTip": "Pacient.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAIwJAAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CreatePage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\CreatePage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\CreatePage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\CreatePage.xaml.cs",
+              "RelativeToolTip": "Pages\\CreatePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:38:28.128Z",
+              "WhenOpened": "2025-10-26T21:48:11.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Doctor.cs",
-              "RelativeDocumentMoniker": "Doctor.cs",
-              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Doctor.cs",
-              "RelativeToolTip": "Doctor.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowFkAAAALAAAAAAAAAA==",
+              "Title": "AcceptingPatientPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\AcceptingPatientPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AcceptingPatientPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\AcceptingPatientPage.xaml.cs",
+              "RelativeToolTip": "Pages\\AcceptingPatientPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:35:40.237Z",
+              "WhenOpened": "2025-10-26T21:52:13.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SignInPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\SignInPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\SignInPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\SignInPage.xaml",
+              "RelativeToolTip": "Pages\\SignInPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T20:24:48.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\MainPage.xaml",
+              "RelativeToolTip": "Pages\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T20:10:11.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Statistics.cs",
-              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Statistics.cs",
-              "RelativeDocumentMoniker": "Statistics.cs",
-              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Statistics.cs",
-              "RelativeToolTip": "Statistics.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAyAAAAAAAAAA==",
+              "Title": "SignInPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\SignInPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\SignInPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\SignInPage.xaml.cs",
+              "RelativeToolTip": "Pages\\SignInPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:25:15.524Z",
+              "WhenOpened": "2025-10-26T21:35:46.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "RegistrPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\RegistrPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\RegistrPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\RegistrPage.xaml.cs",
+              "RelativeToolTip": "Pages\\RegistrPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T21:40:57.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\MainPage.xaml.cs",
+              "RelativeToolTip": "Pages\\MainPage.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T21:43:06.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChangePatientPage.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\ChangePatientPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\ChangePatientPage.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\ChangePatientPage.xaml.cs",
+              "RelativeToolTip": "Pages\\ChangePatientPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T21:50:25.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:19:29.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AcceptingPatientPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\AcceptingPatientPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\AcceptingPatientPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\AcceptingPatientPage.xaml",
+              "RelativeToolTip": "Pages\\AcceptingPatientPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T20:55:43.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChangePatientPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\ChangePatientPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\ChangePatientPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\ChangePatientPage.xaml",
+              "RelativeToolTip": "Pages\\ChangePatientPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T20:45:18.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreatePage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\CreatePage.xaml",
+              "RelativeDocumentMoniker": "Pages\\CreatePage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\CreatePage.xaml",
+              "RelativeToolTip": "Pages\\CreatePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T20:31:31.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegistrPage.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\RegistrPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\RegistrPage.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pages\\RegistrPage.xaml",
+              "RelativeToolTip": "Pages\\RegistrPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T19:44:23.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -89,16 +266,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAswE4AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:19:29.014Z",
+              "DocumentIndex": 14,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T22:38:39.263Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Statistics.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Statistics.cs",
+              "RelativeDocumentMoniker": "Statistics.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Statistics.cs",
+              "RelativeToolTip": "Statistics.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T21:38:18.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Pacient.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pacient.cs",
+              "RelativeDocumentMoniker": "Pacient.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Pacient.cs",
+              "RelativeToolTip": "Pacient.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAA/wFsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:38:28.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HistoryAppointment.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\HistoryAppointment.cs",
+              "RelativeDocumentMoniker": "HistoryAppointment.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\HistoryAppointment.cs",
+              "RelativeToolTip": "HistoryAppointment.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswFQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T21:18:47.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Doctor.cs",
+              "RelativeDocumentMoniker": "Doctor.cs",
+              "ToolTip": "D:\\\u0420\u0430\u0431\u043E\u0442\u044B\\\u0422\u0420\u041F\u041E\\Data_Binding_Mironov\\Doctor.cs",
+              "RelativeToolTip": "Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T20:35:40.237Z"
             }
           ]
         }
