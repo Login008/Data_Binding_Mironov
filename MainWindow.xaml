@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Data_Binding_Mironov"
         mc:Ignorable="d"
-        Title="Окно приёма пациента" Height="510" Width="800">
+        Title="Окно приёма пациента" 
+        Height="650" 
+        Width="800">
 
     <StackPanel>
         <Frame x:Name="MainFrame" 
-               Height="450" 
+               Height="650" 
                Width="800"
                NavigationUIVisibility="Hidden"/>
         

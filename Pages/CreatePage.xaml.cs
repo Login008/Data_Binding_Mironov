@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 using System.IO;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Data_Binding_Mironov.Pages
 {
@@ -23,40 +24,56 @@ namespace Data_Binding_Mironov.Pages
         {
             if (chosenPacient.Name != "" && chosenPacient.LastName != "" && chosenPacient.MiddleName != "" && chosenPacient.Birthday != "")
             {
-                int min = 1000000;
-                int max = 9999999;
-
-                string randId = "999999";
-                string fName = "null";
-
-                List<string> Excludes = new List<string>();
-                for (int i = min; i < max; i++)
+                if (DateP2.SelectedDate != null && DateP2.SelectedDate < DateTime.Today)
                 {
-                    do
+                    DateTime.TryParse(chosenPacient.Birthday, out DateTime result);
+                    if (result.Date <= DateTime.Today && chosenPacient.Birthday != "")
                     {
-                        randId = rand.Next(min, max).ToString();
-                    } while (Excludes.Contains(randId));
+                        if (NumberBox1.Text.Count() == 10 && NumberBox1.Text.All(char.IsDigit))
+                        {
+                            int min = 1000000;
+                            int max = 9999999;
 
-                    if (File.Exists(fName))
-                    {
-                        Excludes.Add(randId);
+                            string randId = "999999";
+                            string fName = "null";
+
+                            List<string> Excludes = new List<string>();
+                            for (int i = min; i < max; i++)
+                            {
+                                do
+                                {
+                                    randId = rand.Next(min, max).ToString();
+                                } while (Excludes.Contains(randId));
+
+                                if (File.Exists(fName))
+                                {
+                                    Excludes.Add(randId);
+                                }
+                                else
+                                {
+                                    fName = "P_" + randId + ".json";
+                                    break;
+                                }
+                            }
+                            chosenPacient.Id = randId;
+
+                            string jsonString = JsonSerializer.Serialize(chosenPacient);
+                            File.WriteAllText(fName, jsonString);
+
+                            MainPage.pacientList.Add(chosenPacient);
+                            MainWindow.stat.UpdateCounts();
+                            MainPage.UpdateList();
+
+                            NavigationService.GoBack();
+                        }
+                        else
+                            MessageBox.Show("В номере телефона должно быть только 10 цифр");
                     }
                     else
-                    {
-                        fName = "P_" + randId + ".json";
-                        break;
-                    }
+                        MessageBox.Show("Дата не может быть будущей");
                 }
-                chosenPacient.Id = randId;
-
-                string jsonString = JsonSerializer.Serialize(chosenPacient);
-                File.WriteAllText(fName, jsonString);
-
-                MainPage.pacientList.Add(chosenPacient);
-                MainWindow.stat.UpdateCounts();
-                MainPage.UpdateList();
-
-                NavigationService.GoBack();
+                else
+                    MessageBox.Show("Выберите дату");
             }
             else
                 MessageBox.Show("Заполните пустые поля");

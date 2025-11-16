@@ -5,6 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Data_Binding_Mironov.Pages"
       mc:Ignorable="d" 
+      xmlns:converters="clr-namespace:Data_Binding_Mironov.Converters"
+      xmlns:validators="clr-namespace:Data_Binding_Mironov.ValidationRules"
       d:DesignHeight="350" 
       d:DesignWidth="500"
       Title="ChangePatientPage">
@@ -58,33 +60,154 @@
                    Grid.Row="3" 
                    Grid.Column="0"/>
 
-            <TextBox Text="{Binding LastName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
-                     Width="200" 
-                     Margin="10"
-                     Height="25"  
-                     Grid.Row="0" 
-                     Grid.Column="1"/>
-            
-            <TextBox Text="{Binding Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
-                     Width="200" 
-                     Height="25"  
-                     Margin="10"
-                     Grid.Row="1" 
-                     Grid.Column="1"/>
-            
-            <TextBox Text="{Binding MiddleName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
-                     Width="200" 
-                     Height="25"  
-                     Grid.Row="2" 
-                     Margin="10"
-                     Grid.Column="1"/>
-            
-            <TextBox Text="{Binding Birthday,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
-                     Width="200" 
-                     Height="25" 
-                     Grid.Row="3" 
-                     Grid.Column="1"
-                     Margin="10"/>
+            <Label Height="25" 
+                   Content="Номер телефона: " 
+                   Grid.Row="4" 
+                   Grid.Column="0"/>
+
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1">
+                <TextBox x:Name="LastNameBox"
+                         Width="200"
+                         Height="25"
+                         Margin="10">
+                    <TextBox.Text>
+                        <Binding Path="LastName"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=LastNameBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" 
+                        Grid.Column="1">
+                <TextBox x:Name="NameBox"
+                         Width="200"
+                         Height="25"
+                         Margin="10">
+                    <TextBox.Text>
+                        <Binding Path="Name"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=NameBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" 
+                        Grid.Column="1">
+                <TextBox x:Name="MiddleNameBox"
+                         Width="200"
+                         Height="25"
+                         Margin="10">
+                    <TextBox.Text>
+                        <Binding Path="MiddleName"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=MiddleNameBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" 
+                        Grid.Column="1">
+                <DatePicker x:Name="DateP1"
+                            Width="200" 
+                            Height="25">
+                    <DatePicker.SelectedDate>
+                        <Binding Path="Birthday" 
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <validators:DateValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </DatePicker.SelectedDate>
+                </DatePicker>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=DateP1, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" 
+                        Grid.Column="1">
+                <TextBox x:Name="NumberBox"
+                         Width="200" 
+                         Height="25"
+                         Margin="10">
+                    <TextBox.Text>
+                        <Binding Path="NumberPhone" 
+                                 UpdateSourceTrigger="PropertyChanged"
+                                 Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <validators:NumberValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=NumberBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
         </Grid>
         
         <Button Click="Change" 

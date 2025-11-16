@@ -16,19 +16,21 @@ namespace Data_Binding_Mironov.Pages
         public SignInPage()
         {
             InitializeComponent();
+            user = new Doctor();
+            DataContext = user;
         }
 
         private void SignIn(object sender, RoutedEventArgs e)
         {
-            if (passwordLoginTextBox.Text != "" && idLoginTextBox.Text != "")
+            if (user.Id.ToString() != "" && user.Password != "")
             {
-                string fName = $"D_{idLoginTextBox.Text}.json";
+                string fName = $"D_{user.Id}.json";
                 if (File.Exists(fName))
                 {
                     string jsonString = File.ReadAllText(fName);
                     Doctor jsonAnswer = JsonSerializer.Deserialize<Doctor>(jsonString);
 
-                    if (jsonAnswer.Password == passwordLoginTextBox.Text)
+                    if (jsonAnswer.Password == user.Password)
                     {
                         user = JsonSerializer.Deserialize<Doctor>(jsonString);
 

@@ -4,10 +4,16 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Data_Binding_Mironov.Pages"
+      xmlns:converters="clr-namespace:Data_Binding_Mironov.Converters"
+      xmlns:validators="clr-namespace:Data_Binding_Mironov.ValidationRules"
       mc:Ignorable="d" 
       d:DesignHeight="450" 
       d:DesignWidth="500"
       Title="MainPage">
+
+    <Page.Resources>
+        <converters:NumberConverter x:Key="numberConverter"/>
+    </Page.Resources>
 
     <StackPanel Width="500" 
                 Height="450" 
@@ -137,6 +143,11 @@
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Дата рождения: "/>
                             <TextBlock Text="{Binding Birthday}"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Номер телефона: "/>
+                            <TextBlock Text="{Binding NumberPhone, Converter={StaticResource numberConverter}}"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>

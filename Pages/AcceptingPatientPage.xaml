@@ -3,14 +3,23 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Data_Binding_Mironov.Pages"
+      xmlns:local="clr-namespace:Data_Binding_Mironov.Pages" 
+      xmlns:converters="clr-namespace:Data_Binding_Mironov.Converters"
+      xmlns:validators="clr-namespace:Data_Binding_Mironov.ValidationRules"
       mc:Ignorable="d" 
-      d:DesignHeight="450" 
+      d:DesignHeight="650" 
       d:DesignWidth="700"
       Title="AcceptingPatientPage">
 
+    <Page.Resources>
+        <converters:AgeConverter x:Key="ageConverter"/>
+        <converters:IsOldConverter x:Key="isOldConverter"/>
+        <converters:AppointmentConverter x:Key="appointmentConverter"/>
+        <converters:NumberConverter x:Key="numberConverter"/>
+    </Page.Resources>
+    
     <StackPanel Width="700"
-                Height="450" 
+                Height="650" 
                 Background="LightGray" 
                 VerticalAlignment="Center" 
                 HorizontalAlignment="Center">
@@ -20,7 +29,8 @@
                Content="Приём пациента"
                FontSize="16"/>
         
-        <Grid Margin="10">
+        <Grid Margin="10"
+              Height="150">
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -28,6 +38,8 @@
             </Grid.ColumnDefinitions>
             
             <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -54,6 +66,18 @@
                    Content="Дата рождения: " 
                    Grid.Row="3" 
                    Grid.Column="0"/>
+            <Label Height="25" 
+                    Content="Возраст: " 
+                    Grid.Row="4" 
+                    Grid.Column="0"/>
+            <Label Height="25" 
+                    Content="Факт совершеннолетия: " 
+                    Grid.Row="5" 
+                    Grid.Column="0"/>
+            <Label Height="25" 
+                   Content="Номер телефона: " 
+                   Grid.Row="6" 
+                   Grid.Column="0"/>
 
             <Label  Height="25" 
                     Content="{Binding pacient.LastName}" 
@@ -74,8 +98,24 @@
                    Content="{Binding pacient.Birthday}" 
                    Grid.Row="3" 
                    Grid.Column="1"/>
+            <Label  Height="25" 
+                    Content="{Binding pacient.Birthday, Converter={StaticResource ageConverter}}" 
+                    Grid.Row="4" 
+                    Grid.Column="1"/>
+            <Label  Height="25" 
+                    Content="{Binding pacient.Birthday, Converter={StaticResource isOldConverter}}" 
+                    Grid.Row="5" 
+                    Grid.Column="1"/>
+            <Label  Height="25" 
+                    Content="{Binding pacient.NumberPhone, Converter={StaticResource numberConverter}}" 
+                    Grid.Row="6" 
+                    Grid.Column="1"/>
         </Grid>
-        
+
+        <Label Background="Red" 
+               Content="{Binding pacient.LastAppointment, Converter={StaticResource appointmentConverter}}"
+               Width="600"
+               HorizontalAlignment="Center"/>
         <ListView ItemsSource="{Binding pacient.LastAppointment}" 
                   LostFocus="ListView_LostFocus" 
                   SelectionChanged="ListView_SelectionChanged" 
@@ -145,38 +185,102 @@
                    Content="Рекомендация: " 
                    Grid.Row="2" 
                    Grid.Column="0"
-                   FontSize="16"/>
+                   FontSize="12"/>
 
-            <DatePicker Text="{Binding copyHistory.Date, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1">
+            <DatePicker x:Name="DateP"
                         Width="200" 
-                        Height="25"  
-                        Grid.Row="0" 
-                        Grid.Column="1"/>
+                        Height="25">
+                <DatePicker.SelectedDate>
+                    <Binding Path="copyHistory.Date" 
+                             UpdateSourceTrigger="PropertyChanged"
+                             Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <validators:DateValidation/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </DatePicker.SelectedDate>
+            </DatePicker>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=DateP, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
 
-            <TextBox Text="{Binding copyHistory.Diagnosis, UpdateSourceTrigger=PropertyChanged}"  
-                     Width="200" 
-                     Height="20" 
-                     Grid.Row="1"
-                     Grid.Column="1"/>
-            
-            <TextBox Text="{Binding copyHistory.Recomendations, UpdateSourceTrigger=PropertyChanged}" 
-                     Margin="5" 
-                     Grid.ColumnSpan="3"
-                     Width="600" 
-                     Height="40" 
-                     Grid.Row="7"
-                     Grid.Column="0"/>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <TextBox x:Name="DiagnosisBox"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="copyHistory.Diagnosis" 
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=DiagnosisBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="7" Grid.ColumnSpan="2">
+                <TextBox x:Name="RecomendationsBox"
+                         Width="600"
+                         Height="30">
+                    <TextBox.Text>
+                        <Binding Path="copyHistory.Recomendations" 
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=RecomendationsBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
         </Grid>
-        
-        <Button Click="Addiction" 
-                HorizontalAlignment="Center"
-                Content="Добавить"
-                Width="200"/>
 
-        <Button Click="Back" 
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Click="Addiction" 
+                    HorizontalAlignment="Center"
+                    Content="Добавить"
+                    Width="200"
+                    Margin="5"/>
+
+            <Button Click="Back" 
                 HorizontalAlignment="Center"
                 Width="200"
                 Content="Вернуться"
                 Margin="5"/>
+        </StackPanel>
     </StackPanel>
 </Page>

@@ -31,3 +31,4 @@ D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\Mai
 D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\RegistrPage.baml
 D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Pages\SignInPage.baml
 D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\Data_Binding_Mironov.sourcelink.json
+D:\Работы\ТРПО\Data_Binding_Mironov\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs

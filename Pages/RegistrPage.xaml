@@ -4,12 +4,13 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Data_Binding_Mironov.Pages"
+      xmlns:validators="clr-namespace:Data_Binding_Mironov.ValidationRules"
       mc:Ignorable="d" 
-      d:DesignHeight="300" 
+      d:DesignHeight="400" 
       d:DesignWidth="500"
       Title="RegistrPage">
 
-    <StackPanel Height="300"
+    <StackPanel Height="400"
                 Width="500"
                 Background="LightSteelBlue"
                 HorizontalAlignment="Center" 
@@ -20,7 +21,8 @@
                Content="Регистрация пользователя"
                FontSize="16"/>
         
-        <Grid Margin="10">
+        <Grid Margin="10"
+              Height="200">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -66,47 +68,171 @@
                    Grid.Row="5" 
                    Grid.Column="0"/>
 
-            <TextBox Text="{Binding LastName}"  
-                     Width="200" 
-                     Height="20"
-                     Margin="5"
-                     Grid.Row="0" 
-                     Grid.Column="1" />
-            
-            <TextBox Text="{Binding Name}"   
-                     Width="200" 
-                     Height="20"  
-                     Grid.Row="1" 
-                     Grid.Column="1"
-                     Margin="5"/>
-            
-            <TextBox Text="{Binding MiddleName}"  
-                     Width="200" 
-                     Height="20"  
-                     Grid.Row="2" 
-                     Margin="5"
-                     Grid.Column="1"/>
-            
-            <TextBox Text="{Binding Specialisation}"  
-                     Width="200" 
-                     Height="20"  
-                     Grid.Row="3" 
-                     Margin="5"
-                     Grid.Column="1"/>
-            
-            <TextBox Text="{Binding Password}"  
-                     Width="200" 
-                     Height="20"  
-                     Margin="5"
-                     Grid.Row="4" 
-                     Grid.Column="1"/>
-            
-            <TextBox Name="DoubleCheckingTextBox" 
-                     Width="200" 
-                     Height="20"  
-                     Grid.Row="5" 
-                     Margin="5"
-                     Grid.Column="1"/>
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1">
+                <TextBox x:Name="LastNameBox2"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="LastName"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=LastNameBox2, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" 
+                        Grid.Column="1">
+                <TextBox x:Name="NameBox2"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="Name"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=NameBox2, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" 
+                        Grid.Column="1">
+                <TextBox x:Name="MiddleNameBox2"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="MiddleName"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=MiddleNameBox2, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" 
+                        Grid.Column="1">
+                <TextBox x:Name="SpecialisationBox"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="Specialisation"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=SpecialisationBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" 
+                        Grid.Column="1">
+                <TextBox x:Name="PasswordBox"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="Password"
+                                 Mode="TwoWay"
+                                 UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                  FontSize="12" 
+                  ItemsSource="{Binding ElementName=PasswordBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                           Text="{Binding ErrorContent}" 
+                           TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="6" 
+                        Grid.Column="1">
+                <TextBox x:Name="DoubleCheckingTextBox"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="DoubleCheck">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=DoubleCheckingTextBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
         </Grid>
         
         <Button Click="Registration"  

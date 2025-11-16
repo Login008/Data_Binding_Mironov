@@ -98,6 +98,20 @@ namespace Data_Binding_Mironov
             }
         }
 
+        private string _doubleCheck = "";
+        public string DoubleCheck
+        {
+            get => _doubleCheck;
+            set
+            {
+                if (_doubleCheck != value)
+                {
+                    _doubleCheck = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler? PropertyChanged;
 
         protected void NotifyPropertyChanged([CallerMemberName] string? propertyName = null)

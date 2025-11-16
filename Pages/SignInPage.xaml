@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Data_Binding_Mironov.Pages"
+      xmlns:validators="clr-namespace:Data_Binding_Mironov.ValidationRules"
       mc:Ignorable="d" 
       d:DesignHeight="200" 
       d:DesignWidth="500"
@@ -38,18 +39,58 @@
             <Label Grid.Row="1" 
                    Grid.Column="0" 
                    Content="Ваш пароль: "/>
-            
-            <TextBox Name="idLoginTextBox" 
-                     Width="200" 
-                     Grid.Row="0" 
-                     Grid.Column="1" 
-                     Height="20"/>
 
-            <TextBox Name="passwordLoginTextBox" 
-                     Width="200" 
-                     Grid.Row="1" 
-                     Grid.Column="1" 
-                     Height="20"/>
+            <StackPanel Grid.Row="0" 
+                        Grid.Column="1">
+                <TextBox x:Name="idLoginTextBox"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="Id">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                              FontSize="12" 
+                              ItemsSource="{Binding ElementName=idLoginTextBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                                       Text="{Binding ErrorContent}" 
+                                       TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" 
+                        Grid.Column="1">
+                <TextBox x:Name="passwordLoginTextBox"
+                         Width="200"
+                         Height="20">
+                    <TextBox.Text>
+                        <Binding Path="Password">
+                            <Binding.ValidationRules>
+                                <validators:MainValidation/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <ItemsControl Foreground="Red" 
+                  FontSize="12" 
+                  ItemsSource="{Binding ElementName=passwordLoginTextBox, Path=(Validation.Errors)}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center" 
+                           Text="{Binding ErrorContent}" 
+                           TextWrapping="Wrap"/>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
         </Grid>
         
         <Button Click="SignIn"  

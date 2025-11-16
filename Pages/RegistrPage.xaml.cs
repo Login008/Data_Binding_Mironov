@@ -3,6 +3,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 using System.IO;
+using System.Security.Cryptography;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace Data_Binding_Mironov.Pages
 {
@@ -11,8 +14,13 @@ namespace Data_Binding_Mironov.Pages
     /// </summary>
     public partial class RegistrPage : Page
     {
+        private Random rand;
+        private Doctor doctorOnline;
+        
         public RegistrPage()
         {
+            rand = new Random();
+            doctorOnline = new Doctor();
             DataContext = doctorOnline;
             InitializeComponent();
         }
@@ -22,13 +30,10 @@ namespace Data_Binding_Mironov.Pages
             NavigationService.GoBack();
         }
 
-        Random rand = new Random();
-        Doctor doctorOnline = new Doctor();
-
         private void Registration(object sender, RoutedEventArgs e)
         {
-            if (doctorOnline.LastName != "" && doctorOnline.Name != "" && doctorOnline.MiddleName != "" && doctorOnline.Specialisation != "" && doctorOnline.Password != "")
-                if (DoubleCheckingTextBox.Text == doctorOnline.Password)
+            if (doctorOnline.LastName != "" && doctorOnline.Name != "" && doctorOnline.MiddleName != "" && doctorOnline.Specialisation != "" && doctorOnline.Password != "" && doctorOnline.DoubleCheck != "")
+                if (doctorOnline.DoubleCheck == doctorOnline.Password)
                 {
                     int min = 10000;
                     int max = 99999;

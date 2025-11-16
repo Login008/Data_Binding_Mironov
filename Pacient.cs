@@ -8,13 +8,15 @@ namespace Data_Binding_Mironov
     public class Pacient : INotifyPropertyChanged
     {
         //конструктор для более быстрого создания
-        public Pacient(string name, string lastName, string middleName, string birthday, ObservableCollection<HistoryAppointment> lastAppointment)
+        public Pacient(string id, string name, string lastName, string middleName, string birthday, ObservableCollection<HistoryAppointment> lastAppointment, string numberPhone)
         {
+            Id = id;
             Name = name;
             LastName = lastName;
             MiddleName = middleName;
             Birthday = birthday;
             LastAppointment = lastAppointment;
+            NumberPhone = numberPhone;
         }
 
         public Pacient()
@@ -26,7 +28,14 @@ namespace Data_Binding_Mironov
         public string Id
         {
             get => _id;
-            set => _id = value;
+            set
+            {
+                if (_id != value)
+                {
+                    _id = value;
+                    NotifyPropertyChanged();
+                }
+            }
         }
         private string _name = "";
         public string Name
@@ -80,6 +89,20 @@ namespace Data_Binding_Mironov
                 }
             }
         }
+        private string _numberPhone = "";
+        public string NumberPhone
+        {
+            get => _numberPhone;
+            set
+            {
+                if (_numberPhone != value)
+                {
+                    _numberPhone = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
         private ObservableCollection<HistoryAppointment> _lastAppointment = new ObservableCollection<HistoryAppointment>();
         public ObservableCollection<HistoryAppointment> LastAppointment
         {
